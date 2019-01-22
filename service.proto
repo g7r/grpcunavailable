@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package grpcunavailable;
+option go_package="grpcunavailable";
+
+message RunRequest {}
+message RunResponse {}
+
+service Unavailable {
+    rpc Run(RunRequest) returns (RunResponse);
+}
